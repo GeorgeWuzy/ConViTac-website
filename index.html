@@ -1,0 +1,354 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+	body {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-weight:300;
+		font-size:30px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 900px;
+	}
+	
+	h1 {
+		font-size:32px;
+		font-weight:300;
+	}
+	
+	.disclaimerbox {
+		background-color: #eee;		
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+		padding: 20px;
+	}
+
+	video.header-vid {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.header-img {
+		height: 140px;
+		border: 1px solid black;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	img.rounded {
+		border: 1px solid #eeeeee;
+		border-radius: 10px ;
+		-moz-border-radius: 10px ;
+		-webkit-border-radius: 10px ;
+	}
+	
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #208799;
+	}
+	
+	td.dl-link {
+		height: 160px;
+		text-align: center;
+		font-size: 22px;
+	}
+	
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+		15px 15px 0 0px #fff, /* The fourth layer */
+		15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+		20px 20px 0 0px #fff, /* The fifth layer */
+		20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+		25px 25px 0 0px #fff, /* The fifth layer */
+		25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+	.paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
+
+		margin-left: 10px;
+		margin-right: 45px;
+	}
+
+
+	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		5px 5px 0 0px #fff, /* The second layer */
+		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		10px 10px 0 0px #fff, /* The third layer */
+		10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-top: 5px;
+		margin-left: 10px;
+		margin-right: 30px;
+		margin-bottom: 5px;
+	}
+	
+	.vert-cent {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	hr
+	{
+		border: 0;
+		height: 1px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+
+
+
+
+
+
+
+</style>
+
+<html>
+<head>
+    <title>ConViTac</title>
+    <meta property="og:image" content="Path to my teaser.png"/>
+    <meta property="og:title" content="Creative and Descriptive Paper Title."/>
+    <meta property="og:description" content="Paper description."/>
+
+    <!-- Get from Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src=""></script>
+    <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-75863369-6');
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+<br>
+<center>
+    <span style="font-size:36px">ConViTac: Aligning Visual-Tactile Fusion with Contrastive Representations</span>
+    <table align=center width=600px>
+        <table align=center width=600px>
+            <tr>
+                <td align=center width=150px>
+                    <center>
+                        <span style="font-size:24px"><a href="https://scholar.google.com/citations?user=t-LuXRIAAAAJ&hl">Zhiyuan Wu</a></span>
+                    </center>
+                </td>
+                <td align=center width=150px>
+                    <center>
+                        <span style="font-size:24px"><a href="https://shanluo.github.io/">Shan Luo</a></span>
+                    </center>
+                </td>
+            </tr>
+        </table>
+        <table align=center width=250px>
+            <tr>
+                <td align=center width=120px>
+                    <center>
+                        <span style="font-size:24px"><a href="">[Paper]</a></span>
+                    </center>
+                </td>
+                <td align=center width=120px>
+                    <center>
+                        <span style="font-size:24px"><a
+                                href="">[GitHub]</a></span><br>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </table>
+</center>
+
+<center>
+    <table align=center width=850px>
+        <tr>
+            <td width=800px>
+                <center>
+                    <img class="round" style="width:500px" src="./resources/teaser.jpg"/>
+                </center>
+            </td>
+        </tr>
+    </table>
+    <table align=center width=850px>
+        <tr>
+            <td>
+                The code can be found in this <a href="">repository</a>.
+            </td>
+        </tr>
+    </table>
+</center>
+
+<hr>
+
+<table align=center width=850px>
+    <center><h1>Abstract</h1></center>
+    <tr>
+        <td>
+            Vision and touch are two fundamental sensory
+            modalities for robots, offering complementary information
+            that enhances perception and manipulation tasks. Previous
+            research has attempted to jointly learn visual-tactile repre-
+            sentations to extract more meaningful information. However,
+            these approaches often rely on direct combination, such as
+            feature addition and concatenation, for modality fusion, which
+            tend to result in poor feature integration. In this paper,
+            we propose ConViTac, a visual-tactile representation learning
+            network designed to enhance the alignment of features during
+            fusion using contrastive representations. Our key contribution
+            is a Contrastive Embedding Conditioning (CEC) mechanism
+            that leverages a pre-trained contrastive encoder to project
+            visual and tactile inputs into unified latent embeddings. These
+            embeddings are used to couple visual-tactile feature fusion
+            through cross-modal attention, aiming at aligning the unified
+            representations and enhancing performance on downstream
+            tasks. We conduct extensive experiments to demonstrate the
+            superiority of ConViTac over current state-of-the-art methods
+            and the effectiveness of our proposed CEC mechanism, which
+            improves accuracy by up to 10.5% in material classification
+            and grasping prediction tasks.
+        </td>
+    </tr>
+</table>
+<br>
+
+<!-- <hr>
+<center><h1>Video</h1></center>
+    <table align=center width=850px>
+        <tr>
+            <td width=260px>
+                <center>
+                    <a href="https://www.bilibili.com/video/BV1ygpSefEwf">
+                        <img class="round" style="width:600px" src="./resources/video.jpg"/>
+                    </a>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+<table align=center width=800px>
+    <br>
+    <tr>
+        <center>
+				<span style="font-size:18pt"><a href='https://www.youtube.com/watch?v=WFHcpN8HPKI'>[Youtube Video Link]</a>
+				</span>
+        </center>
+    </tr>
+</table> -->
+
+<!-- <hr> -->
+
+<!--<center><h1>Code</h1></center>-->
+
+<!-- <table align=center width=420px>
+    <center>
+        <tr>
+            <td>
+            </td>
+        </tr>
+    </center>
+</table>
+<table align=center width=400px>
+    <tr>
+        <td align=center width=400px>
+            <center>
+        <td><img class="round" style="width:450px" src="./resources/method_diagram.png"/></td>
+        </center>
+        </td>
+    </tr>
+</table>
+<table align=center width=850px>
+    <center>
+        <tr>
+            <td> -->
+<!--                Short description if wanted-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--    </center>-->
+<!--</table>-->
+
+<!--<table align=center width=800px>-->
+<!--    <br>-->
+<!--    <tr>-->
+<!--        <center>-->
+<!--			<span style="font-size:28px">&nbsp;<a href='https://github.com/richzhang/webpage-template'>[GitHub]</a>-->
+<!--        </center>-->
+<!--        </span>-->
+<!--</table>-->
+<!--<br>-->
+
+<!-- <hr> -->
+
+<!-- <table align=center width=600px>
+    <center><h1>Paper and Supplementary Material</h1></center>
+    <tr>
+        <td><a href="https://arxiv.org/abs/2208.08667"><img class="layered-paper-big" style="height:175px"
+                                                            src="./resources/paper_3dv.jpg"/></a></td>
+        <td><span style="font-size:14pt">M. Nan, Y. Feng, R. Fan.<br>
+				<b>SDA-SNE: Spatial Discontinuity-Aware Surface Normal Estimation via Multi-Directional Dynamic Programming</b><br>
+				In 3DV, 2022.<br>
+				(hosted on <a href="https://arxiv.org/abs/2208.08667">ArXiv</a>)<br>
+				<span style="font-size:4pt"><a href=""><br></a>
+				</span>
+        </td>
+    </tr>
+</table>
+<br>
+
+<table align=center width=600px>
+    <tr>
+        <td><span style="font-size:18pt">
+            <center>
+				<a href="./resources/bibtex.txt">[Bibtex]</a>
+			</center>
+        </td>
+    </tr>
+</table>
+
+<hr>
+<br>
+
+<table align=center width=900px>
+    <tr>
+        <td width=400px>
+            <left>
+                <center><h1>Acknowledgements</h1></center>
+                This research was supported by the National Natural Science Foundation of China
+                under Grants 62233013 and 61796184, the Science and Technology Commission of 
+                Shanghai Municipal under Grant 22511104500, and the Fundamental Research Funds 
+                for the Central Universities.
+            </left>
+        </td>
+    </tr>
+</table>
+
+<br> -->
+</body>
+</html>
+
